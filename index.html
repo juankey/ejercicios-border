@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+
+        }
+        *,*::before,*::after{
+            box-sizing: inherit;
+        }
+        body{
+            background-color: #000;
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        article{
+            background-color: aliceblue;
+            border: 1px solid white;
+            width: 30em;
+            height: 30em;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+        div{
+            background-color: #333;
+            color: white;
+            border: 1px solid black;
+            height: 4em;
+            flex-basis:8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        div:first-child{
+            border-bottom-right-radius: 3em;
+        }
+        div:nth-child(2){
+            border-bottom-right-radius:3em 1.5em;
+        }
+        div:nth-child(3){
+            border-bottom-right-radius:1.5em 3em;
+        }
+        div:nth-child(4){
+            border-radius: 2em 5em / 1em 7em ;
+        }
+        div:nth-child(5){
+            border-radius: 1em 1em / 1em 1em ;
+        }
+        div:last-child{
+            flex-basis: 4rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+    </article>
+</body>
+</html>
